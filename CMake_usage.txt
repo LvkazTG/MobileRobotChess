@@ -1,0 +1,5 @@
+With catkin, insert a line as this one to build the program
+Remember that this code uses fuzzylite lib, so its necessary to build and install it before
+
+add_executable(fuzzy_chess src/chess_fuzzy.cpp src/fuzzylite.cpp)
+target_link_libraries(fuzzy_chess ${catkin_LIBRARIES} fuzzylite)
